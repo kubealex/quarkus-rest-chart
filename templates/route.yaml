@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ include "quarkus-rest.fullname" . }}
+  labels:
+    {{- include "quarkus-rest.labels" . | nindent 4 }}
+  annotations:
+    haproxy.router.openshift.io/balance: "roundrobin"
+    haproxy.router.openshift.io/disable_cookies: "true"
+spec:
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: {{ include "quarkus-rest.fullname" . }}
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge

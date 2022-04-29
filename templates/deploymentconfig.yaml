@@ -1,0 +1,27 @@
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+metadata:
+  name: {{ include "quarkus-rest.fullname" . }}
+  labels:
+    {{- include "quarkus-rest.labels" . | nindent 4 }}
+spec:
+  triggers:
+    - type: ConfigChange
+  replicas: {{ .Values.replica_count }}
+  selector:
+    {{- include "quarkus-rest.selectorLabels" . | nindent 4 }}
+  template:
+    metadata:
+      labels:
+        {{- include "quarkus-rest.labels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ include "quarkus-rest.fullname" . }}
+          image: "{{ .Values.image_registry }}/{{ .Values.image_namespace}}/{{ .Values.image_name }}@{{ .Values.image_digest }}"
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+              name: 8080-tcp
+            - containerPort: 8443
+              protocol: TCP
+              name: 8443-tcp
