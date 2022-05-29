@@ -3,4 +3,4 @@ image_registry: quay.io
 image_namespace: kubealex
 image_name: quarkus-rest
 # likely over written by the Argo definition
-image_digest: sha256:6d4016e28cd20dfac61f70aade85a84acf02c6df91e37b0a4f1c4a159e8fe4b9
+image_digest: sha256:f23e7af822fe30893f35e85100a816f6aec2d1f3f372bf56e3c6450efb8e6e7b
