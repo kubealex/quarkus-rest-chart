@@ -1,6 +1,6 @@
 replica_count: 1
-image_registry: image-registry.openshift-image-registry.svc:5000
-image_namespace: awesome-quarkus
+image_registry: quay.io
+image_namespace: kubealex
 image_name: quarkus-rest
 # likely over written by the Argo definition
-image_digest: sha256:6b0b0799ab4ee2d5def4b111d7c0f8aa8f542a1d101ec5d3c279c3449a81fa7e
+image_digest: sha256:6d4016e28cd20dfac61f70aade85a84acf02c6df91e37b0a4f1c4a159e8fe4b9
