@@ -3,12 +3,22 @@ entries:
   quarkus-rest:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-04-29T17:09:42.666473527+02:00"
+    created: "2022-05-29T16:08:58.919862069+02:00"
     description: Chart for the awesome quarkus-rest application.
-    digest: 082107aa051d229246ab19041b7966b3e9fdf54e5c6b49561b094ebebe0faced
+    digest: 8abbe43245bcdabc5396b6112756617757775096d1b9d4642d2cb428879b9580
     name: quarkus-rest
     type: application
     urls:
-    - https://kubealex.github.io/quarkus-rest-chart/quarkus-rest-1.1.0.tgz
+    - quarkus-rest-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2022-05-29T16:08:58.919427873+02:00"
+    description: Chart for the awesome quarkus-rest application.
+    digest: 69f39aa0abe135acaf01dec9a73b7407dd0840f9d0e1680b1a8a704dbeb15a21
+    name: quarkus-rest
+    type: application
+    urls:
+    - quarkus-rest-1.1.0.tgz
     version: 1.1.0
-generated: "2022-04-29T17:09:42.66610388+02:00"
+generated: "2022-05-29T16:08:58.918857886+02:00"
