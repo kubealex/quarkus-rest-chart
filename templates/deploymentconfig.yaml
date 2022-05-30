@@ -1,12 +1,10 @@
-kind: DeploymentConfig
+kind: Deployment
 apiVersion: apps.openshift.io/v1
 metadata:
   name: {{ include "quarkus-rest.fullname" . }}
   labels:
     {{- include "quarkus-rest.labels" . | nindent 4 }}
 spec:
-  triggers:
-    - type: ConfigChange
   replicas: {{ .Values.replica_count }}
   selector:
     {{- include "quarkus-rest.selectorLabels" . | nindent 4 }}
