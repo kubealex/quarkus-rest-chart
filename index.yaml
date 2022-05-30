@@ -3,9 +3,9 @@ entries:
   quarkus-rest:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-05-30T08:34:55.841501573+02:00"
+    created: "2022-05-30T08:38:32.368425586+02:00"
     description: Chart for the awesome quarkus-rest application.
-    digest: d2dab2680ec89c44f0ed59984fe210a7b0773aea567b992d49cfd358ac03dac9
+    digest: 5086f6a0ebbb8048797ced37b90a21202bda7dc160aed73cc37a63bd31ce134b
     name: quarkus-rest
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 1.1.1
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2022-05-30T08:34:55.841009165+02:00"
+    created: "2022-05-30T08:38:32.367566513+02:00"
     description: Chart for the awesome quarkus-rest application.
     digest: 69f39aa0abe135acaf01dec9a73b7407dd0840f9d0e1680b1a8a704dbeb15a21
     name: quarkus-rest
@@ -21,4 +21,4 @@ entries:
     urls:
     - quarkus-rest-1.1.0.tgz
     version: 1.1.0
-generated: "2022-05-30T08:34:55.840522211+02:00"
+generated: "2022-05-30T08:38:32.366748359+02:00"
