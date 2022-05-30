@@ -6,8 +6,6 @@ metadata:
     {{- include "quarkus-rest.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replica_count }}
-  selector:
-    {{- include "quarkus-rest.selectorLabels" . | nindent 4 }}
   template:
     metadata:
       labels:
